@@ -8,6 +8,9 @@ const scene = new THREE.Scene();
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: "purple" });
 const mesh = new THREE.Mesh(geometry, material);
+mesh.position.x = 1;
+mesh.position.y = 1;
+mesh.position.z = 1;
 scene.add(mesh);
 
 // Camera
@@ -16,9 +19,9 @@ const aspect = {
   height: window.innerHeight,
 };
 const camera = new THREE.PerspectiveCamera(75, aspect.width / aspect.height);
-camera.position.z = 3;
 camera.position.x = 1;
 camera.position.y = 1;
+camera.position.z = 3;
 scene.add(camera);
 
 // Renderer

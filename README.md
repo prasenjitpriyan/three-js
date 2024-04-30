@@ -10,3 +10,7 @@ You are now inside your room and holding a camera in your hand.Inside your room 
 Your room is the scene, the place where this photo was taken from the place where the action happened. The objects are everything in your room or in the scene. And the number of objects in this example is three objects the ball. The computer screen and the phone.
 
 The camera is the same camera with which the scene was shot, and the renderer is the process of drawing the image taken from the camera onto the canvas. Once you press the button on the camera, the photo will be taken. Then the WebGL renderer will draw this image on the canvas.
+
+## What is the scale?
+
+The scale makes me stretch or shrink the mesh.
