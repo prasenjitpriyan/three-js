@@ -4,20 +4,30 @@ import * as THREE from "./three.module.js";
 // Scene
 const scene = new THREE.Scene();
 
+// Group
+const group = new THREE.Group();
+
 // Mesh
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: "purple" });
 const mesh = new THREE.Mesh(geometry, material);
-
 mesh.position.z = 1;
+//scene.add(mesh);
 
-mesh.scale.x = 2;
-//mesh.scale.y = 3;
+// Mesh Two
+const geometryTwo = new THREE.BoxGeometry(1, 1, 1);
+const materialTwo = new THREE.MeshBasicMaterial({ color: "red" });
+const meshTwo = new THREE.Mesh(geometryTwo, materialTwo);
+meshTwo.position.y = 2;
+//scene.add(meshTwo)
 
-mesh.rotation.x = Math.PI * 0.25;
-mesh.rotation.y = Math.PI * 1.2;
+group.add(mesh, meshTwo);
+group.position.x = 3;
+scene.add(group);
 
-scene.add(mesh);
+// AxesHelper
+const axesHelper = new THREE.AxesHelper(4);
+scene.add(axesHelper);
 
 // Camera
 const aspect = {
