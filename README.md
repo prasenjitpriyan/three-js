@@ -14,3 +14,35 @@ The camera is the same camera with which the scene was shot, and the renderer is
 ## What is the scale?
 
 The scale makes me stretch or shrink the mesh.
+
+## Rotation
+
+Now we want to clarify the difference whether the value of the rotation is negative or positive.
+
+Let's now rotate the cube on the x axis.
+
+Imagine that the red line is the stick that will pass through the cube.
+
+Now we will start to rotate the cube counterclockwise.
+
+And that's mean that the rotation value is positive.
+
+Then the cube will rotate like this.
+
+Now, if the rotation value is negative, then I will start to move clockwise.
+
+Then the cube rotate in the opposite direction of the previous rotation direction.
+
+And the same thing on the y axis.
+
+This is how the cube will rotate when I start to rotate counterclockwise.
+
+And this is the rotation direction when I start to rotate clockwise.
+
+And let's try that on the Z axis.
+
+If I rotate the cube counterclockwise.
+
+And in case I rotated the cube clockwise.
+
+![Alt text](/01_hello-cube/images/Screenshot%202024-04-30%20at%207.52.36 AM.png "a title")
